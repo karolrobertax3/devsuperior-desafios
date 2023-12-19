@@ -11,7 +11,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="categories")
+@Table(name="tb_category")
 public class Category {
     
 	@Id
@@ -21,6 +21,7 @@ public class Category {
 	
 	@ManyToMany(mappedBy = "categories")
 	private Set<Product> products = new HashSet<>();
+	
 	public Category() {
 		super();
 	}
@@ -41,6 +42,14 @@ public class Category {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public Set<Product> getProducts() {
+		return products;
+	}
+	public void setProducts(Set<Product> products) {
+		this.products = products;
+	}
+	
+	
 	
 	
 }
