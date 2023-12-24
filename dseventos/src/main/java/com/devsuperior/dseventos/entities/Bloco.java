@@ -28,8 +28,9 @@ public class Bloco {
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant fim;
 
-	@OneToMany(mappedBy = "blocos")
-	private List<Atividade> atividade = new ArrayList<>();
+	@ManyToOne
+	@JoinColumn(name = "atividade")
+	private Atividade atividade;
 	
 	public Bloco() {
 		super();
@@ -66,6 +67,16 @@ public class Bloco {
 	public void setFim(Instant fim) {
 		this.fim = fim;
 	}
+
+	public Atividade getAtividade() {
+		return atividade;
+	}
+
+	public void setAtividade(Atividade atividade) {
+		this.atividade = atividade;
+	}
+	
+	
 	
 	
 }

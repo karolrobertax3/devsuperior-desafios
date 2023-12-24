@@ -1,6 +1,8 @@
 package com.devsuperior.dseventos.entities;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
@@ -34,9 +36,9 @@ public class Atividade {
 	@JoinColumn(name = "atividades")
 	private Categoria categorias;
 	
-	@ManyToOne
-	@JoinColumn(name = "atividade")
-	private Bloco blocos;
+	
+	@OneToMany(mappedBy = "atividade")
+	private List<Bloco> blocos = new ArrayList<>();
 	
 	public Atividade() {
 		super();
@@ -72,6 +74,24 @@ public class Atividade {
 	}
 	public void setPreco(Double preco) {
 		this.preco = preco;
+	}
+	public Set<Participante> getParticipantes() {
+		return participantes;
+	}
+	public void setParticipantes(Set<Participante> participantes) {
+		this.participantes = participantes;
+	}
+	public Categoria getCategorias() {
+		return categorias;
+	}
+	public void setCategorias(Categoria categorias) {
+		this.categorias = categorias;
+	}
+	public List<Bloco> getBlocos() {
+		return blocos;
+	}
+	public void setBlocos(List<Bloco> blocos) {
+		this.blocos = blocos;
 	}
 	
 		
