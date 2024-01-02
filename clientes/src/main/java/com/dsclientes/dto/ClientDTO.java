@@ -12,11 +12,6 @@ public class ClientDTO {
 	private Double income;
 	private LocalDate birthDate;
 	private Integer children;
-	
-	public ClientDTO() {
-		super();
-		
-	}
 
 	public ClientDTO(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
 		super();
