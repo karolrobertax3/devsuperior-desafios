@@ -1,9 +1,0 @@
-package com.devsuperior.dscommerce.entities;
-
-public class Payment {
-
-	private Long id;
-	private Instant moment;
-	
-	
-}

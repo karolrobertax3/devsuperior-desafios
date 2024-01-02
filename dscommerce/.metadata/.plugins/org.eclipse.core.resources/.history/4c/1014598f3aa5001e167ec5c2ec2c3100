@@ -1,1 +1,0 @@
-INSERT TB_CLIENT(name, cpf, income, birth_date, children) VALUES("Adriel Ramos Vilela","25500651153", 6500.0, "1933-03-24", 1 );

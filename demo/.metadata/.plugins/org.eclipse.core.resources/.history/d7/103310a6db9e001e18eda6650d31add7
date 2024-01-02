@@ -1,4 +1,0 @@
-INSERT INTO tb_category(name) VALUES ('Livros');
-INSERT INTO tb_category(name) VALUES ('Eletrônicos');
-
-INSERT INTO tb_product(name, description, price, img_url) VALUES ('Senhor dos Anéis', 'Harry Potter é muito melhor', 300.0, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.seboestacaoculturaljundiai.com.br%2FMLB-3296687131-livro-harry-potter-e-o-calice-de-fogo-vol-4-rowling-j-k-2001-_JM&psig=AOvVaw0QiyLIhCXP4sHHbNW7IhsF&ust=1703123817894000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCJDnhuP0nIMDFQAAAAAdAAAAABAR'  );

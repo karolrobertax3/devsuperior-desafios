@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.devsuperior.salary.services.BrazilTaxServices&apos; to &apos;BrazilTaxService&apos;&#x0D;&#x0A;- Original project: &apos;salary&apos;&#x0D;&#x0A;- Original element: &apos;com.devsuperior.salary.services.BrazilTaxServices&apos;&#x0D;&#x0A;- Renamed element: &apos;com.devsuperior.salary.services.BrazilTaxService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BrazilTaxServices&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.devsuperior.salary.services{BrazilTaxServices.java[BrazilTaxServices" matchStrategy="1" name="BrazilTaxService" qualified="false" references="true" similarDeclarations="false" stamp="1702182396403" textual="false" version="1.0"/>
-</session>

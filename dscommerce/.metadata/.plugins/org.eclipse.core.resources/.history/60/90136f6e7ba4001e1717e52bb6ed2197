@@ -1,8 +1,0 @@
-package com.dsclientes.repositories;
-
-public interface ClientRepository {
-
-	public interface ClientRepository extends JpaRepository(Client, Long) {
-		
-	}
-}

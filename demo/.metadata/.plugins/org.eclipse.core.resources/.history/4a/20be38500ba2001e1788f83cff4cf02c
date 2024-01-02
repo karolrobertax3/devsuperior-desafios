@@ -1,5 +1,0 @@
-INSERT INTO tb_participante (nome, email) VALUES ('João Pedro', 'joaosilva@outlook.com')
-
-INSERT INTO tb_atividade (nome, descricao, preco) VALUES ('Java', 'Curso de java para iniciantes', 600.0)
-
-DROP tb_participante
