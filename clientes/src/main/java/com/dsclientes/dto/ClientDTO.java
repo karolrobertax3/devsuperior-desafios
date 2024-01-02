@@ -4,13 +4,28 @@ import java.time.LocalDate;
 
 import com.dsclientes.entities.Client;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
+
 public class ClientDTO {
 
 	private Long id;
+	@NotBlank(message="Campo obrigatório.")
 	private String name;
+	
+	@Positive(message="CPF inválido.")
+	@NotBlank(message="Campo obrigatório.")
 	private String cpf;
+	
+	@PositiveOrZero(message="Renda inválida, número deve ser positivo")
 	private Double income;
+	
+	@PastOrPresent
 	private LocalDate birthDate;
+	
+	@PositiveOrZero(message="Número inválido, deve ser positivo.")
 	private Integer children;
 
 	public ClientDTO(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
