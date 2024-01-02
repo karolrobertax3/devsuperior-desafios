@@ -1,0 +1,2 @@
+INSERT INTO tb_category(name) VALUE ('Livros');
+INSERT INTO tb_category(name) VALUE ('Eletrônicos');

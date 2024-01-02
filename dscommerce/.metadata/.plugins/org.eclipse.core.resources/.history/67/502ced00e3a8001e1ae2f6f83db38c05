@@ -1,0 +1,5 @@
+package com.dsclientes.controllers.handlers;
+
+public class ControllerExceptionHandler {
+
+}

@@ -1,0 +1,27 @@
+package com.dsclientes.controllers;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dsclientes.dto.ClientDTO;
+import com.dsclientes.entities.Client;
+import com.dsclientes.services.ClientService;
+
+@RestController
+@RequestMapping(value = "/clients")
+public class ClientController {
+
+	@Autowired
+	private ClientService service;
+	
+	@GetMapping
+	public ClientDTO findById(Long id) {
+		Optional<Client> result = repository.findById(1L);
+		Client client = result.get();
+		return client.getName();
+	}
+}

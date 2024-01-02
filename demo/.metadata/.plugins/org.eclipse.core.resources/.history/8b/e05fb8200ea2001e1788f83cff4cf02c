@@ -1,0 +1,6 @@
+INSERT INTO tb_atividade (nome, descricao,preco) VALUES ('Curso de HTML', 'Aprenda HTML de forma pratica', 80.00)
+
+INSERT INTO tb_atividade (nome, descricao,preco) VALUES ('Oficina de GITHUB', 'Controle versões de seus projetos', 50.00)
+
+INSERT INTO tb_participante (nome, email) VALUES ('Jose Silva', 'jose@gmail.com')
+

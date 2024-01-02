@@ -1,0 +1,16 @@
+package com.dsclientes.services;
+
+import org.springframework.stereotype.Service;
+
+import com.dsclientes.dto.ClientDTO;
+import com.dsclientes.repositories.ClientRepository;
+
+@Service
+public class ClientService {
+
+	private ClientRepository repository;
+	
+	public ClientDTO findByIdClientDTO(Long id) {
+		
+	}
+}

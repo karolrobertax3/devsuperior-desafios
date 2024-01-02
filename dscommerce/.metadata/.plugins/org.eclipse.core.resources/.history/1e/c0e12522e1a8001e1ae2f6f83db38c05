@@ -1,0 +1,5 @@
+package com.dsclientes.services.exceptions;
+
+public class ResourceNotFoundException {
+
+}

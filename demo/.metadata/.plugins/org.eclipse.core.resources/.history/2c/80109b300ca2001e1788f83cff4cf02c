@@ -1,0 +1,1 @@
+INSERT INTO tb_participante (nome, email) VALUES ('Jose Silva', 'jose@gmail.com')

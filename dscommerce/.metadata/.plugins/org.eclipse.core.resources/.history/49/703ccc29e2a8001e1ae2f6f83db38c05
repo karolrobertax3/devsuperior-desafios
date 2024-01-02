@@ -1,0 +1,5 @@
+package com.dsclientes.dto;
+
+public class CustomError {
+
+}
